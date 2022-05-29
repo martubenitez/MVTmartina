@@ -4,4 +4,4 @@ from familiares.models import familiar
 def familiares(request):
     familiares = familiar.objects.all()
     context={'familiares': familiares}
-    return render (request, 'index.html', context=context )
+    return render (request, 'familiares.html', context=context )
