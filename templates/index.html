@@ -7,6 +7,12 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Hola que tal!</h1>
+     {% for familiar in familiares%}
+        <h2>{{familiar.nombre}} {{familiar.apellido}} </h2>
+        <p> {{familiar.Tipo}} </p><br>
+        <p>Edad: {{familiar.edad}} </p><br>
+        <p>Nacimiento: {{familiar.nacimiento}} </p>
+        
+
 </body>
 </html>
